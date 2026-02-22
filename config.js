@@ -11,7 +11,7 @@ module.exports = {
     FOOTER : process.env.FOOTER || 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʀᴋ ꜱᴜᴍᴏ ʙᴏᴛ',
     CAPTION : process.env.CAPTION || '©𝟐𝟎𝟐𝟓 𝐌𝐀𝐑𝐊 𝐒𝐔𝐌𝐎 𝐁𝐎𝐓',
     VERSION: process.env.VERSION || '5.0.0',
-    BOT_PIC : process.env.BOT_PIC || 'https://github.com/Santos1134/bot/blob/master/6493a655-2a77-487b-aedc-b7c93c58da49.jpg',
+    BOT_PIC : process.env.BOT_PIC || 'https://raw.githubusercontent.com/Santos1134/bot/master/markbot.jpg',
     MODE: process.env.MODE || "private",
     PM_PERMIT: process.env.PM_PERMIT || 'false',
     WARN_COUNT : process.env.WARN_COUNT || '3',
