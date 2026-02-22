@@ -15,7 +15,7 @@ module.exports = {
     MODE: process.env.MODE || "private",
     PM_PERMIT: process.env.PM_PERMIT || 'false',
     WARN_COUNT : process.env.WARN_COUNT || '3',
-    TIME_ZONE: process.env.TIME_ZONE || "Africa/Douala",
+    TIME_ZONE: process.env.TIME_ZONE || "Africa/Monrovia",
     DM_PRESENCE : process.env.DM_PRESENCE || 'online',
     GC_PRESENCE : process.env.GC_PRESENCE || 'online',
     CHATBOT : process.env.CHATBOT || 'false',
