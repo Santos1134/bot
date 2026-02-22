@@ -3,6 +3,7 @@ const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
 const AdmZip = require("adm-zip");
+const { execSync } = require("child_process");
 
 function copyFolderSync(source, destination, excludeList = []) {
   if (!fs.existsSync(destination)) fs.mkdirSync(destination, { recursive: true });
@@ -92,6 +93,11 @@ gmd(
 
       try { fs.unlinkSync(zipPath); } catch {}
       try { fs.rmSync(extractPath, { recursive: true, force: true }); } catch {}
+
+      await reply("📦 Installing dependencies...");
+      try {
+        execSync("npm install", { cwd: destinationPath, stdio: "ignore" });
+      } catch {}
 
       await reply("✅ Update Complete! Bot is Restarting...");
 
