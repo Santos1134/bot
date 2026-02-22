@@ -22,6 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "*",
+    "adm-zip": "^0.5.10",
     "@hapi/boom": "*",
     "@vitalets/google-translate-api": "^9.2.0",
     "acrcloud": "*",
