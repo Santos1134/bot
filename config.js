@@ -41,7 +41,7 @@ module.exports = {
     NEWSLETTER_JID: process.env.NEWSLETTER_JID || '',
     NEWSLETTER_NAME: process.env.NEWSLETTER_NAME || 'MARK-SUMO-BOT',
     NEWSLETTER_URL: process.env.NEWSLETTER_URL || '',
-    BOT_REPO: process.env.BOT_REPO || 'Santos1134/sessionid',
+    BOT_REPO: process.env.BOT_REPO || 'Santos1134/bot',
     PACK_NAME: process.env.PACK_NAME || '𝐌𝐀𝐑𝐊 𝐒𝐔𝐌𝐎 𝐁𝐎𝐓',
     PACK_AUTHOR: process.env.PACK_AUTHOR || '𝐌𝐀𝐑𝐊 𝐒𝐔𝐌𝐎'
 };
