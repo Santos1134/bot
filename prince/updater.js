@@ -45,7 +45,7 @@ gmd(
 
       const repoName = princeRepo || config.BOT_REPO;
       const { data: commitData } = await axios.get(
-        `https://api.github.com/repos/${repoName}/commits/main`
+        `https://api.github.com/repos/${repoName}/commits/master`
       );
       const latestCommitHash = commitData.sha;
       const currentHash = getSetting("COMMIT_HASH", "");
@@ -65,7 +65,7 @@ gmd(
 
       const repoParts = repoName.split("/");
       const repoShort = repoParts[1] || repoName;
-      const branch = "main";
+      const branch = "master";
 
       const zipPath = path.join(__dirname, "..", `${repoShort}-${branch}.zip`);
       const { data: zipData } = await axios.get(
